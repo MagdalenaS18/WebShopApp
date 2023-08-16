@@ -16,14 +16,17 @@ namespace WebApp.Services
     public class UserService : IUserService
     {
         private readonly IUnitOfWork _unitOfWork;
+        private readonly IEmailService _emailService;
         private readonly IConfigurationSection _secretKey;
         private readonly IConfigurationSection _googleClientId;
+
         private readonly IMapper _mapper;
 
-        public UserService(IUnitOfWork unitOfWork, IConfiguration configuration
-            , IMapper mapper)
+        public UserService(IUnitOfWork unitOfWork, IConfiguration configuration,
+            IEmailService emailService, IMapper mapper)
         {
             _unitOfWork = unitOfWork;
+            _emailService = emailService;
             _secretKey = configuration.GetSection("SecretKey");
             _googleClientId = configuration.GetSection("GoogleClientId");
             _mapper = mapper;
@@ -42,25 +45,25 @@ namespace WebApp.Services
             {
                 user.Approved = true;
                 var email = user.Email;
-                //var message = new Message(new string[]
-                //  {$"{email}"},
-                //  "Profile activation",
-                //   "Your profile is active now!"
-                //);
+                var message = new Email(new string[]
+                  {$"{email}"},
+                  "Profile activation",
+                   "Your profile is active now!"
+                );
 
-                //await _emailService.SendEmail(message);
+                await _emailService.SendEmail(message);
             }
             else
             {
                 user.Denied = true;
                 var email = user.Email;
-                //var message = new Message(new string[]
-                //    {$"{email}" },
-                //    "Profile activation",
-                //    "Your registration has been denied."
-                //);
+                var message = new Email(new string[]
+                    {$"{email}" },
+                    "Profile activation",
+                    "Your registration has been denied."
+                );
 
-                //await _emailService.SendEmail(message);
+                await _emailService.SendEmail(message);
             }
 
             _unitOfWork.Users.UpdateUser(user);
@@ -164,6 +167,23 @@ namespace WebApp.Services
             long id;
             long.TryParse(user.Identity.Name, out id);
             return id;
+        }
+
+        public async Task<UserImageDto> GetUserImage(long id)
+        {
+            var user = await _unitOfWork.Users.GetById((id));
+            if(user == null)
+            {
+                throw new Exception("User doesn't exist.");
+            }
+            byte[] imageBytes = await _unitOfWork.Users.GetUserImage(id);
+
+            UserImageDto usersImage = new UserImageDto()
+            {
+                ImageBytes = imageBytes
+            };
+
+            return usersImage;
         }
 
         public async Task<TokenDto> Login(LoginUserDto user)
@@ -276,9 +296,24 @@ namespace WebApp.Services
             return _mapper.Map<UpdateUserDto>(userExists);
         }
 
-        public Task UploadImage(long id, IFormFile file)
+        public async Task UploadImage(long id, IFormFile file)
         {
-            throw new NotImplementedException();
+            var user = await _unitOfWork.Users.GetById(id);
+            if(user == null)
+            {
+                throw new Exception("User doens't exist.");
+            }
+
+            using(var ms = new MemoryStream())
+            {
+                file.CopyTo(ms);
+                var fileBytes = ms.ToArray();
+
+                user.ProfilePictureUrl = fileBytes;
+                _unitOfWork.Users.UpdateUser(user);
+            }
+
+            await _unitOfWork.Save();
         }
 
         private async Task<ExternalUserDto> VerifyGoogleToken(string externalLoginToken)

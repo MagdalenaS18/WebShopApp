@@ -33,9 +33,10 @@ namespace WebApp.Repositories
             return await _userDbContext.Users.FindAsync(id);
         }
 
-        public Task<byte[]> GetUserImage(long id)
+        public async Task<byte[]> GetUserImage(long id)
         {
-            throw new NotImplementedException();
+            User user = await _userDbContext.Users.FindAsync(id);
+            return user.ProfilePictureUrl;
         }
 
         public async Task<User> InsertUser(User user)

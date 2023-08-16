@@ -18,6 +18,6 @@ namespace WebApp.Services.Interfaces
         Task<UpdateUserDto> UpdateUser(long id, UpdateUserDto user);
         Task UploadImage(long id, IFormFile file);
         //Task<ExternalUserDto> VerifyGoogleToken(string externalLoginToken);
-        //Task<UserImageDto> GetUserImage(long id);
+        Task<UserImageDto> GetUserImage(long id);
     }
 }

@@ -14,7 +14,7 @@ namespace WebApp.Mapper
             CreateMap<User, LoginUserDto>().ReverseMap();
             CreateMap<User, UpdateUserDto>().ReverseMap();
             CreateMap<User, ActivationUserDto>().ReverseMap();
-            //CreateMap<User, UserDto>().ReverseMap();
+            CreateMap<User, UserImageDto>().ReverseMap();
         }
     }
 }

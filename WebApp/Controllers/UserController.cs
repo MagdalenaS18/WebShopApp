@@ -47,7 +47,7 @@ namespace WebApp.Controllers
 
         [HttpPut("edit-profile")]
         [Authorize(Roles = "ADMIN, SELLER, BUYER")]
-        public async Task<IActionResult> EditProfile([FromBody] UpdateUserDto updateUserDto)
+        public async Task<IActionResult> EditProfile([FromForm] UpdateUserDto updateUserDto)
         {
             var editUserId = _userService.GetUserIdFromToken(User);
             return Ok(await _userService.UpdateUser(editUserId, updateUserDto));
@@ -74,6 +74,21 @@ namespace WebApp.Controllers
             return Ok(await _userService.GetUnactiveSellers());
         }
 
+        [HttpPut("image-upload")]
+        [Consumes("multipart/form-data")]
+        [Authorize(Roles = "ADMIN, SELLER, BUYER")]
+        public async Task<IActionResult> ImageUpload(IFormFile file)
+        {
+            await _userService.UploadImage(_userService.GetUserIdFromToken(User), file);
+            return Ok();
+        }
 
+        [HttpGet("image")]
+        [Authorize(Roles = "ADMIN, SELLER, BUYER")]
+        public async Task<IActionResult> GetImage()
+        {
+            UserImageDto imageDto = await _userService.GetUserImage(_userService.GetUserIdFromToken(User));
+            return Ok(imageDto);
+        }
     }
 }
