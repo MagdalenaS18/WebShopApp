@@ -1,0 +1,240 @@
+2023-08-21 18:34:27.365 +02:00 [DBG] Initializing Razor view compiler with no compiled views.
+2023-08-21 18:34:27.564 +02:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-08-21 18:34:27.649 +02:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-21 18:34:28.600 +02:00 [DBG] Hosting starting
+2023-08-21 18:34:28.609 +02:00 [DBG] Reading data from file 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys\key-b236eb4a-ead9-46e4-9f8e-2816bc033f68.xml'.
+2023-08-21 18:34:28.665 +02:00 [DBG] Found key {b236eb4a-ead9-46e4-9f8e-2816bc033f68}.
+2023-08-21 18:34:28.703 +02:00 [DBG] Considering key {b236eb4a-ead9-46e4-9f8e-2816bc033f68} with expiration date 2023-11-13 13:44:10Z as default key.
+2023-08-21 18:34:28.710 +02:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-08-21 18:34:28.711 +02:00 [DBG] Decrypting secret element using Windows DPAPI.
+2023-08-21 18:34:28.713 +02:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-08-21 18:34:28.727 +02:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2023-08-21 18:34:28.731 +02:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2023-08-21 18:34:28.737 +02:00 [DBG] Using key {b236eb4a-ead9-46e4-9f8e-2816bc033f68} as the default key.
+2023-08-21 18:34:28.738 +02:00 [DBG] Key ring with default key {b236eb4a-ead9-46e4-9f8e-2816bc033f68} was loaded during application startup.
+2023-08-21 18:34:29.057 +02:00 [DBG] Using development certificate: CN=localhost (Thumbprint: F2CEC245FE5B1D31078DE9EB9181DA26A8E9D9B9)
+2023-08-21 18:34:29.168 +02:00 [INF] Now listening on: https://localhost:7115
+2023-08-21 18:34:29.168 +02:00 [INF] Now listening on: http://localhost:5064
+2023-08-21 18:34:29.169 +02:00 [DBG] Loaded hosting startup assembly ApiGateway
+2023-08-21 18:34:29.169 +02:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-08-21 18:34:29.169 +02:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-08-21 18:34:29.174 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-21 18:34:29.175 +02:00 [INF] Hosting environment: Development
+2023-08-21 18:34:29.175 +02:00 [INF] Content root path: C:\Users\HP\Desktop\WebApp\ApiGateway\
+2023-08-21 18:34:29.175 +02:00 [DBG] Hosting started
+2023-08-21 18:34:29.405 +02:00 [DBG] Connection id "0HMT2CHUSPBKH" received FIN.
+2023-08-21 18:34:29.433 +02:00 [DBG] Connection id "0HMT2CHUSPBKH" accepted.
+2023-08-21 18:34:29.437 +02:00 [DBG] Connection id "0HMT2CHUSPBKH" started.
+2023-08-21 18:34:29.503 +02:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-08-21 18:34:29.655 +02:00 [DBG] Connection id "0HMT2CHUSPBKH" stopped.
+2023-08-21 18:34:29.665 +02:00 [DBG] Connection id "0HMT2CHUSPBKH" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-21 18:34:30.007 +02:00 [DBG] Connection id "0HMT2CHUSPBKI" accepted.
+2023-08-21 18:34:30.010 +02:00 [DBG] Connection id "0HMT2CHUSPBKI" started.
+2023-08-21 18:34:30.054 +02:00 [DBG] Connection id "0HMT2CHUSPBKJ" accepted.
+2023-08-21 18:34:30.055 +02:00 [DBG] Connection id "0HMT2CHUSPBKJ" started.
+2023-08-21 18:34:30.127 +02:00 [DBG] Connection id "0HMT2CHUSPBKI" received FIN.
+2023-08-21 18:34:30.226 +02:00 [DBG] Connection 0HMT2CHUSPBKJ established using the following protocol: "Tls13"
+2023-08-21 18:34:30.226 +02:00 [DBG] Connection 0HMT2CHUSPBKI established using the following protocol: "Tls13"
+2023-08-21 18:34:30.293 +02:00 [DBG] Connection id "0HMT2CHUSPBKI" is closed. The last processed stream ID was 0.
+2023-08-21 18:34:30.296 +02:00 [DBG] Connection id "0HMT2CHUSPBKI" sending FIN because: "The client closed the connection."
+2023-08-21 18:34:30.299 +02:00 [DBG] Connection id "0HMT2CHUSPBKI" stopped.
+2023-08-21 18:34:30.399 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7115/ - -
+2023-08-21 18:34:30.524 +02:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-08-21 18:34:30.568 +02:00 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2023-08-21 18:34:30.572 +02:00 [DBG] The request path / does not match a supported file type
+2023-08-21 18:34:30.589 +02:00 [DBG] No candidates found for the request path '/'
+2023-08-21 18:34:30.590 +02:00 [DBG] Request did not match any endpoints
+2023-08-21 18:34:30.614 +02:00 [DBG] requestId: 0HMT2CHUSPBKJ:00000001, previousRequestId: no previous request id, message: ocelot pipeline started
+2023-08-21 18:34:30.640 +02:00 [DBG] requestId: 0HMT2CHUSPBKJ:00000001, previousRequestId: no previous request id, message: Upstream url path is /
+2023-08-21 18:34:30.682 +02:00 [WRN] requestId: 0HMT2CHUSPBKJ:00000001, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET.
+2023-08-21 18:34:30.683 +02:00 [WRN] requestId: 0HMT2CHUSPBKJ:00000001, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET. errors found in ResponderMiddleware. Setting error response for request path:/, request method: GET
+2023-08-21 18:34:30.689 +02:00 [DBG] requestId: 0HMT2CHUSPBKJ:00000001, previousRequestId: no previous request id, message: ocelot pipeline finished
+2023-08-21 18:34:30.730 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7115/ - - - 404 0 - 343.8299ms
+2023-08-21 18:34:34.537 +02:00 [DBG] Connection id "0HMT2CHUSPBKJ" received FIN.
+2023-08-21 18:34:34.537 +02:00 [DBG] Connection id "0HMT2CHUSPBKJ" is closed. The last processed stream ID was 1.
+2023-08-21 18:34:34.538 +02:00 [DBG] Connection id "0HMT2CHUSPBKJ" sending FIN because: "The client closed the connection."
+2023-08-21 18:34:34.543 +02:00 [DBG] Connection id "0HMT2CHUSPBKJ" stopped.
+2023-08-21 18:36:51.644 +02:00 [DBG] Connection id "0HMT2CHUSPBKK" accepted.
+2023-08-21 18:36:51.659 +02:00 [DBG] Connection id "0HMT2CHUSPBKK" started.
+2023-08-21 18:36:51.687 +02:00 [DBG] Connection 0HMT2CHUSPBKK established using the following protocol: "Tls13"
+2023-08-21 18:36:51.690 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7115/User/user - -
+2023-08-21 18:36:51.691 +02:00 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2023-08-21 18:36:51.691 +02:00 [DBG] The request path /User/user does not match a supported file type
+2023-08-21 18:36:51.692 +02:00 [DBG] No candidates found for the request path '/User/user'
+2023-08-21 18:36:51.692 +02:00 [DBG] Request did not match any endpoints
+2023-08-21 18:36:51.692 +02:00 [DBG] requestId: 0HMT2CHUSPBKK:00000001, previousRequestId: no previous request id, message: ocelot pipeline started
+2023-08-21 18:36:51.692 +02:00 [DBG] requestId: 0HMT2CHUSPBKK:00000001, previousRequestId: no previous request id, message: Upstream url path is /User/user
+2023-08-21 18:36:51.698 +02:00 [WRN] requestId: 0HMT2CHUSPBKK:00000001, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /User/user, verb: GET.
+2023-08-21 18:36:51.698 +02:00 [WRN] requestId: 0HMT2CHUSPBKK:00000001, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /User/user, verb: GET. errors found in ResponderMiddleware. Setting error response for request path:/User/user, request method: GET
+2023-08-21 18:36:51.698 +02:00 [DBG] requestId: 0HMT2CHUSPBKK:00000001, previousRequestId: no previous request id, message: ocelot pipeline finished
+2023-08-21 18:36:51.699 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7115/User/user - - - 404 0 - 8.9433ms
+2023-08-21 18:36:54.732 +02:00 [DBG] Connection id "0HMT2CHUSPBKK" received FIN.
+2023-08-21 18:36:54.732 +02:00 [DBG] Connection id "0HMT2CHUSPBKK" is closed. The last processed stream ID was 1.
+2023-08-21 18:36:54.733 +02:00 [DBG] Connection id "0HMT2CHUSPBKK" sending FIN because: "The client closed the connection."
+2023-08-21 18:36:54.735 +02:00 [DBG] Connection id "0HMT2CHUSPBKK" stopped.
+2023-08-21 18:37:04.125 +02:00 [DBG] Connection id "0HMT2CHUSPBKL" accepted.
+2023-08-21 18:37:04.125 +02:00 [DBG] Connection id "0HMT2CHUSPBKL" started.
+2023-08-21 18:37:04.128 +02:00 [DBG] Connection 0HMT2CHUSPBKL established using the following protocol: "Tls13"
+2023-08-21 18:37:04.130 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7115/User/user - -
+2023-08-21 18:37:04.131 +02:00 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2023-08-21 18:37:04.131 +02:00 [DBG] The request path /User/user does not match a supported file type
+2023-08-21 18:37:04.131 +02:00 [DBG] No candidates found for the request path '/User/user'
+2023-08-21 18:37:04.131 +02:00 [DBG] Request did not match any endpoints
+2023-08-21 18:37:04.131 +02:00 [DBG] requestId: 0HMT2CHUSPBKL:00000001, previousRequestId: no previous request id, message: ocelot pipeline started
+2023-08-21 18:37:04.132 +02:00 [DBG] requestId: 0HMT2CHUSPBKL:00000001, previousRequestId: no previous request id, message: Upstream url path is /User/user
+2023-08-21 18:37:04.132 +02:00 [WRN] requestId: 0HMT2CHUSPBKL:00000001, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /User/user, verb: GET.
+2023-08-21 18:37:04.132 +02:00 [WRN] requestId: 0HMT2CHUSPBKL:00000001, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /User/user, verb: GET. errors found in ResponderMiddleware. Setting error response for request path:/User/user, request method: GET
+2023-08-21 18:37:04.132 +02:00 [DBG] requestId: 0HMT2CHUSPBKL:00000001, previousRequestId: no previous request id, message: ocelot pipeline finished
+2023-08-21 18:37:04.132 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7115/User/user - - - 404 0 - 2.9344ms
+2023-08-21 18:37:04.736 +02:00 [DBG] Connection id "0HMT2CHUSPBKL" received FIN.
+2023-08-21 18:37:04.737 +02:00 [DBG] Connection id "0HMT2CHUSPBKL" is closed. The last processed stream ID was 1.
+2023-08-21 18:37:04.737 +02:00 [DBG] Connection id "0HMT2CHUSPBKL" sending FIN because: "The client closed the connection."
+2023-08-21 18:37:04.738 +02:00 [DBG] Connection id "0HMT2CHUSPBKL" stopped.
+2023-08-21 18:37:10.872 +02:00 [DBG] Connection id "0HMT2CHUSPBKM" accepted.
+2023-08-21 18:37:10.873 +02:00 [DBG] Connection id "0HMT2CHUSPBKM" started.
+2023-08-21 18:37:10.878 +02:00 [DBG] Connection 0HMT2CHUSPBKM established using the following protocol: "Tls13"
+2023-08-21 18:37:10.879 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7115/api/User/user - -
+2023-08-21 18:37:10.881 +02:00 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2023-08-21 18:37:10.881 +02:00 [DBG] The request path /api/User/user does not match a supported file type
+2023-08-21 18:37:10.881 +02:00 [DBG] No candidates found for the request path '/api/User/user'
+2023-08-21 18:37:10.881 +02:00 [DBG] Request did not match any endpoints
+2023-08-21 18:37:10.881 +02:00 [DBG] requestId: 0HMT2CHUSPBKM:00000001, previousRequestId: no previous request id, message: ocelot pipeline started
+2023-08-21 18:37:10.881 +02:00 [DBG] requestId: 0HMT2CHUSPBKM:00000001, previousRequestId: no previous request id, message: Upstream url path is /api/User/user
+2023-08-21 18:37:10.889 +02:00 [WRN] requestId: 0HMT2CHUSPBKM:00000001, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /api/User/user, verb: GET.
+2023-08-21 18:37:10.890 +02:00 [WRN] requestId: 0HMT2CHUSPBKM:00000001, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /api/User/user, verb: GET. errors found in ResponderMiddleware. Setting error response for request path:/api/User/user, request method: GET
+2023-08-21 18:37:10.890 +02:00 [DBG] requestId: 0HMT2CHUSPBKM:00000001, previousRequestId: no previous request id, message: ocelot pipeline finished
+2023-08-21 18:37:10.890 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7115/api/User/user - - - 404 0 - 11.2661ms
+2023-08-21 18:37:14.759 +02:00 [DBG] Connection id "0HMT2CHUSPBKM" received FIN.
+2023-08-21 18:37:14.759 +02:00 [DBG] Connection id "0HMT2CHUSPBKM" is closed. The last processed stream ID was 1.
+2023-08-21 18:37:14.759 +02:00 [DBG] Connection id "0HMT2CHUSPBKM" sending FIN because: "The client closed the connection."
+2023-08-21 18:37:14.789 +02:00 [DBG] Connection id "0HMT2CHUSPBKM" stopped.
+2023-08-21 18:48:52.344 +02:00 [DBG] Initializing Razor view compiler with no compiled views.
+2023-08-21 18:48:52.417 +02:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-08-21 18:48:52.476 +02:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-21 18:48:52.775 +02:00 [DBG] Hosting starting
+2023-08-21 18:48:52.779 +02:00 [DBG] Reading data from file 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys\key-b236eb4a-ead9-46e4-9f8e-2816bc033f68.xml'.
+2023-08-21 18:48:52.789 +02:00 [DBG] Found key {b236eb4a-ead9-46e4-9f8e-2816bc033f68}.
+2023-08-21 18:48:52.799 +02:00 [DBG] Considering key {b236eb4a-ead9-46e4-9f8e-2816bc033f68} with expiration date 2023-11-13 13:44:10Z as default key.
+2023-08-21 18:48:52.801 +02:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-08-21 18:48:52.801 +02:00 [DBG] Decrypting secret element using Windows DPAPI.
+2023-08-21 18:48:52.803 +02:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-08-21 18:48:52.809 +02:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2023-08-21 18:48:52.811 +02:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2023-08-21 18:48:52.815 +02:00 [DBG] Using key {b236eb4a-ead9-46e4-9f8e-2816bc033f68} as the default key.
+2023-08-21 18:48:52.815 +02:00 [DBG] Key ring with default key {b236eb4a-ead9-46e4-9f8e-2816bc033f68} was loaded during application startup.
+2023-08-21 18:48:52.975 +02:00 [DBG] Using development certificate: CN=localhost (Thumbprint: F2CEC245FE5B1D31078DE9EB9181DA26A8E9D9B9)
+2023-08-21 18:48:53.023 +02:00 [INF] Now listening on: https://localhost:7115
+2023-08-21 18:48:53.024 +02:00 [INF] Now listening on: http://localhost:5064
+2023-08-21 18:48:53.024 +02:00 [DBG] Loaded hosting startup assembly ApiGateway
+2023-08-21 18:48:53.024 +02:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-08-21 18:48:53.024 +02:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-08-21 18:48:53.027 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-21 18:48:53.027 +02:00 [INF] Hosting environment: Development
+2023-08-21 18:48:53.027 +02:00 [INF] Content root path: C:\Users\HP\Desktop\WebApp\ApiGateway\
+2023-08-21 18:48:53.027 +02:00 [DBG] Hosting started
+2023-08-21 18:48:53.105 +02:00 [DBG] Connection id "0HMT2CQ09KO08" accepted.
+2023-08-21 18:48:53.105 +02:00 [DBG] Connection id "0HMT2CQ09KO09" accepted.
+2023-08-21 18:48:53.106 +02:00 [DBG] Connection id "0HMT2CQ09KO08" started.
+2023-08-21 18:48:53.106 +02:00 [DBG] Connection id "0HMT2CQ09KO09" started.
+2023-08-21 18:48:53.131 +02:00 [DBG] Connection id "0HMT2CQ09KO09" received FIN.
+2023-08-21 18:48:53.131 +02:00 [DBG] Connection id "0HMT2CQ09KO08" received FIN.
+2023-08-21 18:48:53.150 +02:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-08-21 18:48:53.150 +02:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-08-21 18:48:53.219 +02:00 [DBG] Connection id "0HMT2CQ09KO08" stopped.
+2023-08-21 18:48:53.219 +02:00 [DBG] Connection id "0HMT2CQ09KO09" stopped.
+2023-08-21 18:48:53.223 +02:00 [DBG] Connection id "0HMT2CQ09KO08" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-21 18:48:53.223 +02:00 [DBG] Connection id "0HMT2CQ09KO09" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-21 18:48:53.415 +02:00 [DBG] Connection id "0HMT2CQ09KO0A" accepted.
+2023-08-21 18:48:53.416 +02:00 [DBG] Connection id "0HMT2CQ09KO0A" started.
+2023-08-21 18:48:53.500 +02:00 [DBG] Connection 0HMT2CQ09KO0A established using the following protocol: "Tls13"
+2023-08-21 18:48:53.612 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7115/ - -
+2023-08-21 18:48:53.659 +02:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-08-21 18:48:53.675 +02:00 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2023-08-21 18:48:53.677 +02:00 [DBG] The request path / does not match a supported file type
+2023-08-21 18:48:53.685 +02:00 [DBG] No candidates found for the request path '/'
+2023-08-21 18:48:53.686 +02:00 [DBG] Request did not match any endpoints
+2023-08-21 18:48:53.701 +02:00 [DBG] requestId: 0HMT2CQ09KO0A:00000001, previousRequestId: no previous request id, message: ocelot pipeline started
+2023-08-21 18:48:53.715 +02:00 [DBG] requestId: 0HMT2CQ09KO0A:00000001, previousRequestId: no previous request id, message: Upstream url path is /
+2023-08-21 18:48:53.729 +02:00 [WRN] requestId: 0HMT2CQ09KO0A:00000001, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET.
+2023-08-21 18:48:53.730 +02:00 [WRN] requestId: 0HMT2CQ09KO0A:00000001, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET. errors found in ResponderMiddleware. Setting error response for request path:/, request method: GET
+2023-08-21 18:48:53.737 +02:00 [DBG] requestId: 0HMT2CQ09KO0A:00000001, previousRequestId: no previous request id, message: ocelot pipeline finished
+2023-08-21 18:48:53.762 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7115/ - - - 404 0 - 155.6348ms
+2023-08-21 18:48:55.871 +02:00 [DBG] Connection id "0HMT2CQ09KO0A" received FIN.
+2023-08-21 18:48:55.916 +02:00 [DBG] Connection id "0HMT2CQ09KO0A" is closed. The last processed stream ID was 1.
+2023-08-21 18:48:55.917 +02:00 [DBG] Connection id "0HMT2CQ09KO0A" sending FIN because: "The client closed the connection."
+2023-08-21 18:48:55.926 +02:00 [DBG] Connection id "0HMT2CQ09KO0A" stopped.
+2023-08-21 18:51:57.176 +02:00 [DBG] Connection id "0HMT2CQ09KO0B" accepted.
+2023-08-21 18:51:57.190 +02:00 [DBG] Connection id "0HMT2CQ09KO0C" accepted.
+2023-08-21 18:51:57.193 +02:00 [DBG] Connection id "0HMT2CQ09KO0B" started.
+2023-08-21 18:51:57.229 +02:00 [DBG] Connection id "0HMT2CQ09KO0C" started.
+2023-08-21 18:51:57.240 +02:00 [DBG] Connection id "0HMT2CQ09KO0B" received FIN.
+2023-08-21 18:51:57.246 +02:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-08-21 18:51:57.249 +02:00 [DBG] Connection id "0HMT2CQ09KO0C" stopped.
+2023-08-21 18:51:57.249 +02:00 [DBG] Connection id "0HMT2CQ09KO0C" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-21 18:51:57.252 +02:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-08-21 18:51:57.253 +02:00 [DBG] Connection id "0HMT2CQ09KO0B" stopped.
+2023-08-21 18:51:57.253 +02:00 [DBG] Connection id "0HMT2CQ09KO0B" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-21 18:52:08.102 +02:00 [DBG] Connection id "0HMT2CQ09KO0D" accepted.
+2023-08-21 18:52:08.102 +02:00 [DBG] Connection id "0HMT2CQ09KO0D" started.
+2023-08-21 18:52:08.103 +02:00 [DBG] Connection id "0HMT2CQ09KO0D" received FIN.
+2023-08-21 18:52:08.104 +02:00 [DBG] Connection id "0HMT2CQ09KO0E" accepted.
+2023-08-21 18:52:08.104 +02:00 [DBG] Connection id "0HMT2CQ09KO0E" started.
+2023-08-21 18:52:08.112 +02:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-08-21 18:52:08.113 +02:00 [DBG] Connection id "0HMT2CQ09KO0D" stopped.
+2023-08-21 18:52:08.113 +02:00 [DBG] Connection id "0HMT2CQ09KO0D" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-21 18:52:08.116 +02:00 [DBG] Connection 0HMT2CQ09KO0E established using the following protocol: "Tls13"
+2023-08-21 18:52:08.133 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:7115/api/User/login application/json 60
+2023-08-21 18:52:08.133 +02:00 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2023-08-21 18:52:08.133 +02:00 [DBG] POST requests are not supported
+2023-08-21 18:52:08.134 +02:00 [DBG] No candidates found for the request path '/api/User/login'
+2023-08-21 18:52:08.134 +02:00 [DBG] Request did not match any endpoints
+2023-08-21 18:52:08.134 +02:00 [DBG] requestId: 0HMT2CQ09KO0E:00000002, previousRequestId: no previous request id, message: ocelot pipeline started
+2023-08-21 18:52:08.134 +02:00 [DBG] requestId: 0HMT2CQ09KO0E:00000002, previousRequestId: no previous request id, message: Upstream url path is /api/User/login
+2023-08-21 18:52:08.145 +02:00 [WRN] requestId: 0HMT2CQ09KO0E:00000002, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /api/User/login, verb: POST.
+2023-08-21 18:52:08.145 +02:00 [WRN] requestId: 0HMT2CQ09KO0E:00000002, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /api/User/login, verb: POST. errors found in ResponderMiddleware. Setting error response for request path:/api/User/login, request method: POST
+2023-08-21 18:52:08.146 +02:00 [DBG] requestId: 0HMT2CQ09KO0E:00000002, previousRequestId: no previous request id, message: ocelot pipeline finished
+2023-08-21 18:52:08.159 +02:00 [DBG] Connection id "0HMT2CQ09KO0E" completed keep alive response.
+2023-08-21 18:52:08.160 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:7115/api/User/login application/json 60 - 404 0 - 26.3952ms
+2023-08-21 18:52:08.160 +02:00 [DBG] Connection id "0HMT2CQ09KO0E", Request id "0HMT2CQ09KO0E:00000002": started reading request body.
+2023-08-21 18:52:08.160 +02:00 [DBG] Connection id "0HMT2CQ09KO0E", Request id "0HMT2CQ09KO0E:00000002": done reading request body.
+2023-08-21 18:52:26.260 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:7115/api/User/login application/json 60
+2023-08-21 18:52:26.260 +02:00 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2023-08-21 18:52:26.260 +02:00 [DBG] POST requests are not supported
+2023-08-21 18:52:26.260 +02:00 [DBG] No candidates found for the request path '/api/User/login'
+2023-08-21 18:52:26.260 +02:00 [DBG] Request did not match any endpoints
+2023-08-21 18:52:26.264 +02:00 [DBG] requestId: 0HMT2CQ09KO0E:00000003, previousRequestId: no previous request id, message: ocelot pipeline started
+2023-08-21 18:52:26.264 +02:00 [DBG] requestId: 0HMT2CQ09KO0E:00000003, previousRequestId: no previous request id, message: Upstream url path is /api/User/login
+2023-08-21 18:52:26.264 +02:00 [WRN] requestId: 0HMT2CQ09KO0E:00000003, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /api/User/login, verb: POST.
+2023-08-21 18:52:26.264 +02:00 [WRN] requestId: 0HMT2CQ09KO0E:00000003, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /api/User/login, verb: POST. errors found in ResponderMiddleware. Setting error response for request path:/api/User/login, request method: POST
+2023-08-21 18:52:26.264 +02:00 [DBG] requestId: 0HMT2CQ09KO0E:00000003, previousRequestId: no previous request id, message: ocelot pipeline finished
+2023-08-21 18:52:26.265 +02:00 [DBG] Connection id "0HMT2CQ09KO0E" completed keep alive response.
+2023-08-21 18:52:26.265 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:7115/api/User/login application/json 60 - 404 0 - 4.9389ms
+2023-08-21 18:52:26.265 +02:00 [DBG] Connection id "0HMT2CQ09KO0E", Request id "0HMT2CQ09KO0E:00000003": started reading request body.
+2023-08-21 18:52:26.265 +02:00 [DBG] Connection id "0HMT2CQ09KO0E", Request id "0HMT2CQ09KO0E:00000003": done reading request body.

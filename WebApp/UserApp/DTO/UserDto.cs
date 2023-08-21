@@ -1,0 +1,17 @@
+﻿using UserApp.Models.Enums;
+
+namespace UserApp.DTO
+{
+    public class UserDto
+    {
+        public long Id { get; set; }
+        public string FullName { get; set; }
+        public string Username { get; set; }
+        public string Email { get; set; }
+        public DateTime BirthDate { get; set; }
+        public string Address { get; set; }
+        public UserType type { get; set; }
+        public bool Approved { get; set; }
+        public bool Denied { get; set; }
+    }
+}
