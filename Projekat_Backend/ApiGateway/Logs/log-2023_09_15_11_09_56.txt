@@ -1,0 +1,156 @@
+2023-09-15 11:09:57.769 +02:00 [DBG] requestId: no request id, previousRequestId: no previous request id, message: Unable to extract configuration for key: Authorization and value: Bearer {token} your configuration file is incorrect
+2023-09-15 11:09:57.815 +02:00 [DBG] requestId: no request id, previousRequestId: no previous request id, message: Unable to extract configuration for key: Authorization and value: Bearer {token} your configuration file is incorrect
+2023-09-15 11:09:57.817 +02:00 [DBG] requestId: no request id, previousRequestId: no previous request id, message: Unable to extract configuration for key: Authorization and value: Bearer {token} your configuration file is incorrect
+2023-09-15 11:09:57.820 +02:00 [DBG] requestId: no request id, previousRequestId: no previous request id, message: Unable to extract configuration for key: Authorization and value: Bearer {token} your configuration file is incorrect
+2023-09-15 11:09:57.822 +02:00 [DBG] requestId: no request id, previousRequestId: no previous request id, message: Unable to extract configuration for key: Authorization and value: Bearer {token} your configuration file is incorrect
+2023-09-15 11:09:58.351 +02:00 [INF] Now listening on: https://localhost:5000
+2023-09-15 11:09:58.366 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-15 11:09:58.369 +02:00 [INF] Hosting environment: Development
+2023-09-15 11:09:58.374 +02:00 [INF] Content root path: C:\Users\HP\Downloads\Web2_projekat-main (1)\Web2_projekat-main\Projekat_Backend\ApiGateway\
+2023-09-15 11:10:14.863 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5000/api/items/allItems - -
+2023-09-15 11:10:14.959 +02:00 [INF] CORS policy execution successful.
+2023-09-15 11:10:14.972 +02:00 [DBG] requestId: 0HMTLPE99UN0T:00000001, previousRequestId: no previous request id, message: ocelot pipeline started
+2023-09-15 11:10:14.986 +02:00 [DBG] requestId: 0HMTLPE99UN0T:00000001, previousRequestId: no previous request id, message: Upstream url path is /api/items/allItems
+2023-09-15 11:10:15.003 +02:00 [DBG] requestId: 0HMTLPE99UN0T:00000001, previousRequestId: no previous request id, message: downstream templates are /api/items/allItems
+2023-09-15 11:10:15.075 +02:00 [INF] requestId: 0HMTLPE99UN0T:00000001, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/items/allItems
+2023-09-15 11:10:15.088 +02:00 [INF] requestId: 0HMTLPE99UN0T:00000001, previousRequestId: no previous request id, message: No authentication needed for /api/items/allItems
+2023-09-15 11:10:15.096 +02:00 [INF] requestId: 0HMTLPE99UN0T:00000001, previousRequestId: no previous request id, message: /api/items/allItems route does not require user to be authorized
+2023-09-15 11:10:15.126 +02:00 [DBG] requestId: 0HMTLPE99UN0T:00000001, previousRequestId: no previous request id, message: Downstream url is https://localhost:5002/api/items/allItems
+2023-09-15 11:10:18.219 +02:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5000/api/orders/newOrders?id=4 - -
+2023-09-15 11:10:18.219 +02:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5000/api/orders/newOrders?id=4 - -
+2023-09-15 11:10:18.221 +02:00 [INF] CORS policy execution successful.
+2023-09-15 11:10:18.223 +02:00 [INF] CORS policy execution successful.
+2023-09-15 11:10:18.251 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5000/api/orders/newOrders?id=4 - -
+2023-09-15 11:10:18.253 +02:00 [INF] CORS policy execution successful.
+2023-09-15 11:10:18.254 +02:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5000/api/orders/newOrders?id=4 - - - 204 - - 34.3455ms
+2023-09-15 11:10:18.254 +02:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5000/api/orders/newOrders?id=4 - - - 204 - - 34.3712ms
+2023-09-15 11:10:18.256 +02:00 [DBG] requestId: 0HMTLPE99UN0U:00000005, previousRequestId: no previous request id, message: ocelot pipeline started
+2023-09-15 11:10:18.259 +02:00 [DBG] requestId: 0HMTLPE99UN0U:00000005, previousRequestId: no previous request id, message: Upstream url path is /api/orders/newOrders
+2023-09-15 11:10:18.264 +02:00 [DBG] requestId: 0HMTLPE99UN0U:00000005, previousRequestId: no previous request id, message: downstream templates are /api/orders/newOrders
+2023-09-15 11:10:18.282 +02:00 [INF] requestId: 0HMTLPE99UN0U:00000005, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/orders/newOrders
+2023-09-15 11:10:18.285 +02:00 [INF] requestId: 0HMTLPE99UN0U:00000005, previousRequestId: no previous request id, message: No authentication needed for /api/orders/newOrders
+2023-09-15 11:10:18.288 +02:00 [INF] requestId: 0HMTLPE99UN0U:00000005, previousRequestId: no previous request id, message: /api/orders/newOrders route does not require user to be authorized
+2023-09-15 11:10:18.289 +02:00 [DBG] requestId: 0HMTLPE99UN0U:00000005, previousRequestId: no previous request id, message: Downstream url is https://localhost:5002/api/orders/newOrders?id=4
+2023-09-15 11:10:18.615 +02:00 [INF] requestId: 0HMTLPE99UN0T:00000001, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: https://localhost:5002/api/items/allItems
+2023-09-15 11:10:18.617 +02:00 [DBG] requestId: 0HMTLPE99UN0T:00000001, previousRequestId: no previous request id, message: setting http response message
+2023-09-15 11:10:18.644 +02:00 [DBG] requestId: 0HMTLPE99UN0T:00000001, previousRequestId: no previous request id, message: no pipeline errors, setting and returning completed response
+2023-09-15 11:10:18.658 +02:00 [DBG] requestId: 0HMTLPE99UN0T:00000001, previousRequestId: no previous request id, message: ocelot pipeline finished
+2023-09-15 11:10:18.662 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5000/api/items/allItems - -
+2023-09-15 11:10:18.665 +02:00 [INF] CORS policy execution successful.
+2023-09-15 11:10:18.666 +02:00 [DBG] requestId: 0HMTLPE99UN0U:00000007, previousRequestId: no previous request id, message: ocelot pipeline started
+2023-09-15 11:10:18.667 +02:00 [INF] HTTP GET /api/items/allItems responded 200 in 3695.7129 ms
+2023-09-15 11:10:18.667 +02:00 [DBG] requestId: 0HMTLPE99UN0U:00000007, previousRequestId: no previous request id, message: Upstream url path is /api/items/allItems
+2023-09-15 11:10:18.675 +02:00 [DBG] requestId: 0HMTLPE99UN0U:00000007, previousRequestId: no previous request id, message: downstream templates are /api/items/allItems
+2023-09-15 11:10:18.677 +02:00 [INF] requestId: 0HMTLPE99UN0U:00000007, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/items/allItems
+2023-09-15 11:10:18.678 +02:00 [INF] requestId: 0HMTLPE99UN0U:00000007, previousRequestId: no previous request id, message: No authentication needed for /api/items/allItems
+2023-09-15 11:10:18.679 +02:00 [INF] requestId: 0HMTLPE99UN0U:00000007, previousRequestId: no previous request id, message: /api/items/allItems route does not require user to be authorized
+2023-09-15 11:10:18.680 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5000/api/items/allItems - - - 200 152223 application/json;+charset=utf-8 3820.4103ms
+2023-09-15 11:10:18.680 +02:00 [DBG] requestId: 0HMTLPE99UN0U:00000007, previousRequestId: no previous request id, message: Downstream url is https://localhost:5002/api/items/allItems
+2023-09-15 11:10:18.715 +02:00 [INF] requestId: 0HMTLPE99UN0U:00000007, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: https://localhost:5002/api/items/allItems
+2023-09-15 11:10:18.742 +02:00 [DBG] requestId: 0HMTLPE99UN0U:00000007, previousRequestId: no previous request id, message: setting http response message
+2023-09-15 11:10:18.744 +02:00 [DBG] requestId: 0HMTLPE99UN0U:00000007, previousRequestId: no previous request id, message: no pipeline errors, setting and returning completed response
+2023-09-15 11:10:18.776 +02:00 [DBG] requestId: 0HMTLPE99UN0U:00000007, previousRequestId: no previous request id, message: ocelot pipeline finished
+2023-09-15 11:10:18.779 +02:00 [INF] HTTP GET /api/items/allItems responded 200 in 112.7006 ms
+2023-09-15 11:10:18.781 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5000/api/items/allItems - - - 200 152223 application/json;+charset=utf-8 118.9269ms
+2023-09-15 11:10:21.437 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5000/api/items/allItems - -
+2023-09-15 11:10:21.440 +02:00 [INF] CORS policy execution successful.
+2023-09-15 11:10:21.443 +02:00 [DBG] requestId: 0HMTLPE99UN0U:00000009, previousRequestId: no previous request id, message: ocelot pipeline started
+2023-09-15 11:10:21.445 +02:00 [DBG] requestId: 0HMTLPE99UN0U:00000009, previousRequestId: no previous request id, message: Upstream url path is /api/items/allItems
+2023-09-15 11:10:21.448 +02:00 [DBG] requestId: 0HMTLPE99UN0U:00000009, previousRequestId: no previous request id, message: downstream templates are /api/items/allItems
+2023-09-15 11:10:21.452 +02:00 [INF] requestId: 0HMTLPE99UN0U:00000009, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/items/allItems
+2023-09-15 11:10:21.455 +02:00 [INF] requestId: 0HMTLPE99UN0U:00000009, previousRequestId: no previous request id, message: No authentication needed for /api/items/allItems
+2023-09-15 11:10:21.458 +02:00 [INF] requestId: 0HMTLPE99UN0U:00000009, previousRequestId: no previous request id, message: /api/items/allItems route does not require user to be authorized
+2023-09-15 11:10:21.460 +02:00 [DBG] requestId: 0HMTLPE99UN0U:00000009, previousRequestId: no previous request id, message: Downstream url is https://localhost:5002/api/items/allItems
+2023-09-15 11:10:21.486 +02:00 [INF] requestId: 0HMTLPE99UN0U:00000009, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: https://localhost:5002/api/items/allItems
+2023-09-15 11:10:21.489 +02:00 [DBG] requestId: 0HMTLPE99UN0U:00000009, previousRequestId: no previous request id, message: setting http response message
+2023-09-15 11:10:21.493 +02:00 [DBG] requestId: 0HMTLPE99UN0U:00000009, previousRequestId: no previous request id, message: no pipeline errors, setting and returning completed response
+2023-09-15 11:10:21.499 +02:00 [DBG] requestId: 0HMTLPE99UN0U:00000009, previousRequestId: no previous request id, message: ocelot pipeline finished
+2023-09-15 11:10:21.503 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5000/api/items/allItems - -
+2023-09-15 11:10:21.505 +02:00 [INF] HTTP GET /api/items/allItems responded 200 in 61.8663 ms
+2023-09-15 11:10:21.507 +02:00 [INF] CORS policy execution successful.
+2023-09-15 11:10:21.514 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5000/api/items/allItems - - - 200 152223 application/json;+charset=utf-8 77.1621ms
+2023-09-15 11:10:21.515 +02:00 [DBG] requestId: 0HMTLPE99UN0U:0000000B, previousRequestId: no previous request id, message: ocelot pipeline started
+2023-09-15 11:10:21.526 +02:00 [DBG] requestId: 0HMTLPE99UN0U:0000000B, previousRequestId: no previous request id, message: Upstream url path is /api/items/allItems
+2023-09-15 11:10:21.532 +02:00 [DBG] requestId: 0HMTLPE99UN0U:0000000B, previousRequestId: no previous request id, message: downstream templates are /api/items/allItems
+2023-09-15 11:10:21.538 +02:00 [INF] requestId: 0HMTLPE99UN0U:0000000B, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/items/allItems
+2023-09-15 11:10:21.541 +02:00 [INF] requestId: 0HMTLPE99UN0U:0000000B, previousRequestId: no previous request id, message: No authentication needed for /api/items/allItems
+2023-09-15 11:10:21.545 +02:00 [INF] requestId: 0HMTLPE99UN0U:0000000B, previousRequestId: no previous request id, message: /api/items/allItems route does not require user to be authorized
+2023-09-15 11:10:21.549 +02:00 [DBG] requestId: 0HMTLPE99UN0U:0000000B, previousRequestId: no previous request id, message: Downstream url is https://localhost:5002/api/items/allItems
+2023-09-15 11:10:21.572 +02:00 [INF] requestId: 0HMTLPE99UN0U:0000000B, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: https://localhost:5002/api/items/allItems
+2023-09-15 11:10:21.577 +02:00 [DBG] requestId: 0HMTLPE99UN0U:0000000B, previousRequestId: no previous request id, message: setting http response message
+2023-09-15 11:10:21.580 +02:00 [DBG] requestId: 0HMTLPE99UN0U:0000000B, previousRequestId: no previous request id, message: no pipeline errors, setting and returning completed response
+2023-09-15 11:10:21.587 +02:00 [DBG] requestId: 0HMTLPE99UN0U:0000000B, previousRequestId: no previous request id, message: ocelot pipeline finished
+2023-09-15 11:10:21.592 +02:00 [INF] HTTP GET /api/items/allItems responded 200 in 76.9664 ms
+2023-09-15 11:10:21.597 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5000/api/items/allItems - - - 200 152223 application/json;+charset=utf-8 95.5421ms
+2023-09-15 11:10:22.832 +02:00 [INF] requestId: 0HMTLPE99UN0U:00000005, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: https://localhost:5002/api/orders/newOrders?id=4
+2023-09-15 11:10:22.834 +02:00 [DBG] requestId: 0HMTLPE99UN0U:00000005, previousRequestId: no previous request id, message: setting http response message
+2023-09-15 11:10:22.837 +02:00 [DBG] requestId: 0HMTLPE99UN0U:00000005, previousRequestId: no previous request id, message: no pipeline errors, setting and returning completed response
+2023-09-15 11:10:22.839 +02:00 [DBG] requestId: 0HMTLPE99UN0U:00000005, previousRequestId: no previous request id, message: ocelot pipeline finished
+2023-09-15 11:10:22.840 +02:00 [INF] HTTP GET /api/orders/newOrders responded 200 in 4584.0529 ms
+2023-09-15 11:10:22.841 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5000/api/orders/newOrders?id=4 - -
+2023-09-15 11:10:22.845 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5000/api/orders/newOrders?id=4 - - - 200 2657 application/json;+charset=utf-8 4593.6836ms
+2023-09-15 11:10:22.847 +02:00 [INF] CORS policy execution successful.
+2023-09-15 11:10:22.849 +02:00 [DBG] requestId: 0HMTLPE99UN0U:0000000D, previousRequestId: no previous request id, message: ocelot pipeline started
+2023-09-15 11:10:22.850 +02:00 [DBG] requestId: 0HMTLPE99UN0U:0000000D, previousRequestId: no previous request id, message: Upstream url path is /api/orders/newOrders
+2023-09-15 11:10:22.851 +02:00 [DBG] requestId: 0HMTLPE99UN0U:0000000D, previousRequestId: no previous request id, message: downstream templates are /api/orders/newOrders
+2023-09-15 11:10:22.853 +02:00 [INF] requestId: 0HMTLPE99UN0U:0000000D, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/orders/newOrders
+2023-09-15 11:10:22.855 +02:00 [INF] requestId: 0HMTLPE99UN0U:0000000D, previousRequestId: no previous request id, message: No authentication needed for /api/orders/newOrders
+2023-09-15 11:10:22.856 +02:00 [INF] requestId: 0HMTLPE99UN0U:0000000D, previousRequestId: no previous request id, message: /api/orders/newOrders route does not require user to be authorized
+2023-09-15 11:10:22.857 +02:00 [DBG] requestId: 0HMTLPE99UN0U:0000000D, previousRequestId: no previous request id, message: Downstream url is https://localhost:5002/api/orders/newOrders?id=4
+2023-09-15 11:10:23.004 +02:00 [INF] requestId: 0HMTLPE99UN0U:0000000D, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: https://localhost:5002/api/orders/newOrders?id=4
+2023-09-15 11:10:23.007 +02:00 [DBG] requestId: 0HMTLPE99UN0U:0000000D, previousRequestId: no previous request id, message: setting http response message
+2023-09-15 11:10:23.009 +02:00 [DBG] requestId: 0HMTLPE99UN0U:0000000D, previousRequestId: no previous request id, message: no pipeline errors, setting and returning completed response
+2023-09-15 11:10:23.013 +02:00 [DBG] requestId: 0HMTLPE99UN0U:0000000D, previousRequestId: no previous request id, message: ocelot pipeline finished
+2023-09-15 11:10:23.015 +02:00 [INF] HTTP GET /api/orders/newOrders responded 200 in 166.2471 ms
+2023-09-15 11:10:23.024 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5000/api/orders/newOrders?id=4 - - - 200 2657 application/json;+charset=utf-8 183.3577ms
+2023-09-15 11:10:24.150 +02:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5000/api/orders/newOrders?id=4 - -
+2023-09-15 11:10:24.151 +02:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5000/api/orders/newOrders?id=4 - -
+2023-09-15 11:10:24.153 +02:00 [INF] CORS policy execution successful.
+2023-09-15 11:10:24.155 +02:00 [INF] CORS policy execution successful.
+2023-09-15 11:10:24.157 +02:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5000/api/orders/newOrders?id=4 - - - 204 - - 7.2704ms
+2023-09-15 11:10:24.159 +02:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5000/api/orders/newOrders?id=4 - - - 204 - - 8.2705ms
+2023-09-15 11:10:24.160 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5000/api/orders/newOrders?id=4 - -
+2023-09-15 11:10:24.164 +02:00 [INF] CORS policy execution successful.
+2023-09-15 11:10:24.166 +02:00 [DBG] requestId: 0HMTLPE99UN0U:00000013, previousRequestId: no previous request id, message: ocelot pipeline started
+2023-09-15 11:10:24.168 +02:00 [DBG] requestId: 0HMTLPE99UN0U:00000013, previousRequestId: no previous request id, message: Upstream url path is /api/orders/newOrders
+2023-09-15 11:10:24.170 +02:00 [DBG] requestId: 0HMTLPE99UN0U:00000013, previousRequestId: no previous request id, message: downstream templates are /api/orders/newOrders
+2023-09-15 11:10:24.172 +02:00 [INF] requestId: 0HMTLPE99UN0U:00000013, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/orders/newOrders
+2023-09-15 11:10:24.173 +02:00 [INF] requestId: 0HMTLPE99UN0U:00000013, previousRequestId: no previous request id, message: No authentication needed for /api/orders/newOrders
+2023-09-15 11:10:24.175 +02:00 [INF] requestId: 0HMTLPE99UN0U:00000013, previousRequestId: no previous request id, message: /api/orders/newOrders route does not require user to be authorized
+2023-09-15 11:10:24.177 +02:00 [DBG] requestId: 0HMTLPE99UN0U:00000013, previousRequestId: no previous request id, message: Downstream url is https://localhost:5002/api/orders/newOrders?id=4
+2023-09-15 11:10:24.329 +02:00 [INF] requestId: 0HMTLPE99UN0U:00000013, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: https://localhost:5002/api/orders/newOrders?id=4
+2023-09-15 11:10:24.331 +02:00 [DBG] requestId: 0HMTLPE99UN0U:00000013, previousRequestId: no previous request id, message: setting http response message
+2023-09-15 11:10:24.332 +02:00 [DBG] requestId: 0HMTLPE99UN0U:00000013, previousRequestId: no previous request id, message: no pipeline errors, setting and returning completed response
+2023-09-15 11:10:24.333 +02:00 [DBG] requestId: 0HMTLPE99UN0U:00000013, previousRequestId: no previous request id, message: ocelot pipeline finished
+2023-09-15 11:10:24.336 +02:00 [INF] HTTP GET /api/orders/newOrders responded 200 in 170.6170 ms
+2023-09-15 11:10:24.336 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5000/api/orders/newOrders?id=4 - -
+2023-09-15 11:10:24.343 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5000/api/orders/newOrders?id=4 - - - 200 2657 application/json;+charset=utf-8 182.9218ms
+2023-09-15 11:10:24.344 +02:00 [INF] CORS policy execution successful.
+2023-09-15 11:10:24.349 +02:00 [DBG] requestId: 0HMTLPE99UN0U:00000015, previousRequestId: no previous request id, message: ocelot pipeline started
+2023-09-15 11:10:24.351 +02:00 [DBG] requestId: 0HMTLPE99UN0U:00000015, previousRequestId: no previous request id, message: Upstream url path is /api/orders/newOrders
+2023-09-15 11:10:24.354 +02:00 [DBG] requestId: 0HMTLPE99UN0U:00000015, previousRequestId: no previous request id, message: downstream templates are /api/orders/newOrders
+2023-09-15 11:10:24.357 +02:00 [INF] requestId: 0HMTLPE99UN0U:00000015, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/orders/newOrders
+2023-09-15 11:10:24.361 +02:00 [INF] requestId: 0HMTLPE99UN0U:00000015, previousRequestId: no previous request id, message: No authentication needed for /api/orders/newOrders
+2023-09-15 11:10:24.363 +02:00 [INF] requestId: 0HMTLPE99UN0U:00000015, previousRequestId: no previous request id, message: /api/orders/newOrders route does not require user to be authorized
+2023-09-15 11:10:24.364 +02:00 [DBG] requestId: 0HMTLPE99UN0U:00000015, previousRequestId: no previous request id, message: Downstream url is https://localhost:5002/api/orders/newOrders?id=4
+2023-09-15 11:10:24.494 +02:00 [INF] requestId: 0HMTLPE99UN0U:00000015, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: https://localhost:5002/api/orders/newOrders?id=4
+2023-09-15 11:10:24.497 +02:00 [DBG] requestId: 0HMTLPE99UN0U:00000015, previousRequestId: no previous request id, message: setting http response message
+2023-09-15 11:10:24.498 +02:00 [DBG] requestId: 0HMTLPE99UN0U:00000015, previousRequestId: no previous request id, message: no pipeline errors, setting and returning completed response
+2023-09-15 11:10:24.499 +02:00 [DBG] requestId: 0HMTLPE99UN0U:00000015, previousRequestId: no previous request id, message: ocelot pipeline finished
+2023-09-15 11:10:24.500 +02:00 [INF] HTTP GET /api/orders/newOrders responded 200 in 151.1983 ms
+2023-09-15 11:10:24.504 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5000/api/orders/newOrders?id=4 - - - 200 2657 application/json;+charset=utf-8 168.0347ms
+2023-09-15 11:10:25.665 +02:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5000/api/orders/orderHistory?id=4 - -
+2023-09-15 11:10:25.666 +02:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5000/api/orders/orderHistory?id=4 - -
+2023-09-15 11:10:25.668 +02:00 [INF] CORS policy execution successful.
+2023-09-15 11:10:25.669 +02:00 [INF] CORS policy execution successful.
+2023-09-15 11:10:25.671 +02:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5000/api/orders/orderHistory?id=4 - - - 204 - - 6.4494ms
+2023-09-15 11:10:25.673 +02:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5000/api/orders/orderHistory?id=4 - - - 204 - - 6.9633ms
+2023-09-15 11:10:25.674 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5000/api/orders/orderHistory?id=4 - -
+2023-09-15 11:10:25.686 +02:00 [INF] CORS policy execution successful.
+2023-09-15 11:10:25.688 +02:00 [DBG] requestId: 0HMTLPE99UN0U:0000001B, previousRequestId: no previous request id, message: ocelot pipeline started
+2023-09-15 11:10:25.690 +02:00 [DBG] requestId: 0HMTLPE99UN0U:0000001B, previousRequestId: no previous request id, message: Upstream url path is /api/orders/orderHistory
+2023-09-15 11:10:25.693 +02:00 [DBG] requestId: 0HMTLPE99UN0U:0000001B, previousRequestId: no previous request id, message: downstream templates are /api/orders/orderHistory
+2023-09-15 11:10:25.695 +02:00 [INF] requestId: 0HMTLPE99UN0U:0000001B, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/orders/orderHistory
+2023-09-15 11:10:25.696 +02:00 [INF] requestId: 0HMTLPE99UN0U:0000001B, previousRequestId: no previous request id, message: No authentication needed for /api/orders/orderHistory
+2023-09-15 11:10:25.697 +02:00 [INF] requestId: 0HMTLPE99UN0U:0000001B, previousRequestId: no previous request id, message: /api/orders/orderHistory route does not require user to be authorized
+2023-09-15 11:10:25.699 +02:00 [DBG] requestId: 0HMTLPE99UN0U:0000001B, previousRequestId: no previous request id, message: Downstream url is https://localhost:5002/api/orders/orderHistory?id=4

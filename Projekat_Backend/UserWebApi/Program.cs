@@ -1,0 +1,89 @@
+using AutoMapper;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
+using Shared.Common;
+using UserWebApi.Context;
+using UserWebApi.Repository;
+using UserWebApi.Repository.IRepository;
+using UserWebApi.Services.Implementations;
+using UserWebApi.Services.Interfaces;
+using UserWebApi.Services.Mapping;
+using Microsoft.AspNetCore.Authentication.Google;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+
+var builder = WebApplication.CreateBuilder(args);
+
+// Add services to the container.
+builder.Services.AddDbContext<ApplicationDbContext>(options => 
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.Configure<EmailConfiguration>(builder.Configuration.GetSection("EmailSettings"));
+builder.Services.AddTransient<IEmailService, EmailService>();
+builder.Services.AddTransient<IUserService, UserService>();
+builder.Services.AddTransient<IUnitOfWork, UnitOfWork>();
+
+builder.Services.AddControllers();
+// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
+builder.Services.AddAuthentication(opt => {
+    opt.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    opt.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+})
+.AddGoogle("Google", options =>
+{
+    options.ClientId = "797764021036-5dh9v25ku57engd46em2ranpjopo2o0c.apps.googleusercontent.com";
+    options.ClientSecret = "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";
+})
+.AddJwtBearer(options =>
+{
+    options.TokenValidationParameters = new TokenValidationParameters //Podesavamo parametre za validaciju pristiglih tokena
+    {
+        ValidateIssuer = true, //Validira izdavaoca tokena
+        ValidateAudience = false, //Kazemo da ne validira primaoce tokena
+        ValidateLifetime = true,//Validira trajanje tokena
+        ValidateIssuerSigningKey = true, //validira potpis token, ovo je jako vazno!
+        ValidIssuer = "https://localhost:5001", //odredjujemo koji server je validni izdavalac
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["SecretKey"]))//navodimo privatni kljuc kojim su potpisani nasi tokeni
+    };
+});
+
+
+var mapperConfig = new MapperConfiguration(mc =>
+{
+    mc.AddProfile(new MappingProfile());
+});
+IMapper mapper = mapperConfig.CreateMapper();
+builder.Services.AddSingleton(mapper);
+
+
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(
+        policy =>
+        {
+            policy.AllowAnyOrigin()
+                .AllowAnyHeader()
+                .SetIsOriginAllowed(origin => true)
+                .AllowAnyMethod();
+        });
+});
+
+var app = builder.Build();
+
+// Configure the HTTP request pipeline.
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+
+app.UseHttpsRedirection();
+app.UseAuthentication();
+app.UseAuthorization();
+app.UseCors();
+
+app.MapControllers();
+
+app.Run();

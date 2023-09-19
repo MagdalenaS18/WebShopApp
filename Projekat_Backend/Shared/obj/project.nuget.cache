@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "WOtGEiIuikR/N1000FOKmRxRGQiJYEhuVSocUQnJsloQ9wAikJ9jd1OHwF6MTgLF3clmtG4vWH8+VSFE+yCylg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\HP\\Downloads\\Web2_projekat-main (1)\\Web2_projekat-main\\Projekat_Backend\\Shared\\Shared.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\HP\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.1\\microsoft.extensions.primitives.5.0.1.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\system.io.pipelines\\5.0.2\\system.io.pipelines.5.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

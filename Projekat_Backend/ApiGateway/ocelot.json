@@ -1,0 +1,271 @@
+{
+  "Routes": [
+    //USER API
+    {
+      "DownstreamPathTemplate": "/api/users/login",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5001
+        }
+      ],
+      "UpstreamPathTemplate": "/api/users/login",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/users/googleLogin",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5001
+        }
+      ],
+      "UpstreamPathTemplate": "/api/users/googleLogin",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/users/googleRegister",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5001
+        }
+      ],
+      "UpstreamPathTemplate": "/api/users/googleRegister",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    //registerBuyer
+    {
+      "DownstreamPathTemplate": "/api/users/registerBuyer",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5001
+        }
+      ],
+      "UpstreamPathTemplate": "/api/users/registerBuyer",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    //registerSeller
+    {
+      "DownstreamPathTemplate": "/api/users/registerSeller",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5001
+        }
+      ],
+      "UpstreamPathTemplate": "/api/users/registerSeller",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    //registerAdmin
+    {
+      "DownstreamPathTemplate": "/api/users/registerAdmin",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5001
+        }
+      ],
+      "UpstreamPathTemplate": "/api/users/registerAdmin",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    //notVerified
+    {
+      "DownstreamPathTemplate": "/api/users/notVerified",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5001
+        }
+      ],
+      "UpstreamPathTemplate": "/api/users/notVerified",
+      "UpstreamHttpMethod": [ "GET" ],
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {token}"
+      }
+    },
+    //verify
+    {
+      "DownstreamPathTemplate": "/api/users/verify",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5001
+        }
+      ],
+      "UpstreamPathTemplate": "/api/users/verify",
+      "UpstreamHttpMethod": [ "POST" ],
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {token}"
+      }
+    },
+    //deny
+    {
+      "DownstreamPathTemplate": "/api/users/deny",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5001
+        }
+      ],
+      "UpstreamPathTemplate": "/api/users/deny",
+      "UpstreamHttpMethod": [ "POST" ],
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {token}"
+      }
+    },
+    //udpateUser
+    {
+      "DownstreamPathTemplate": "/api/users/updateUser",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5001
+        }
+      ],
+      "UpstreamPathTemplate": "/api/users/updateUser",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+
+    //ITEM
+
+    {
+      "DownstreamPathTemplate": "/api/items/allItems",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5002
+        }
+      ],
+      "UpstreamPathTemplate": "/api/items/allItems",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/items/addNew",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5002
+        }
+      ],
+      "UpstreamPathTemplate": "/api/items/addNew",
+      "UpstreamHttpMethod": [ "Post" ],
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {token}"
+      }
+    },
+
+    //ORDER API
+
+    {
+      "DownstreamPathTemplate": "/api/orders/allOrders",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5002
+        }
+      ],
+      "UpstreamPathTemplate": "/api/orders/allOrders",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/orders/myOrders",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5002
+        }
+      ],
+      "UpstreamPathTemplate": "/api/orders/myOrders",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/orders/orderHistory",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5002
+        }
+      ],
+      "UpstreamPathTemplate": "/api/orders/orderHistory",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    //newOrders
+    {
+      "DownstreamPathTemplate": "/api/orders/newOrders",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5002
+        }
+      ],
+      "UpstreamPathTemplate": "/api/orders/newOrders",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    //newOrder
+    {
+      "DownstreamPathTemplate": "/api/orders/newOrder",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5002
+        }
+      ],
+      "UpstreamPathTemplate": "/api/orders/newOrder",
+      "UpstreamHttpMethod": [ "Post" ],
+    },
+    //CancleOrder
+    {
+      "DownstreamPathTemplate": "/api/orders/cancleOrder",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5002
+        }
+      ],
+      "UpstreamPathTemplate": "/api/orders/cancleOrder",
+      "UpstreamHttpMethod": [ "Post" ],
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {token}"
+      }
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:5000",
+    "RequestIdKey": "OcRequestId",
+    "ServiceDiscoveryProvider": {
+      "Host": "localhost",
+      "Port": 5000
+    },
+    "Logging": {
+      "LogLevel": {
+        "Default": "Information"
+      }
+    }
+
+  }
+}
