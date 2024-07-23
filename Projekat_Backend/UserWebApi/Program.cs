@@ -33,8 +33,8 @@ builder.Services.AddAuthentication(opt => {
 })
 .AddGoogle("Google", options =>
 {
-    options.ClientId = "797764021036-5dh9v25ku57engd46em2ranpjopo2o0c.apps.googleusercontent.com";
-    options.ClientSecret = "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";
+    options.ClientId = "";
+    options.ClientSecret = "";
 })
 .AddJwtBearer(options =>
 {

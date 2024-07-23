@@ -1,9 +1,0 @@
-2023-09-13 20:34:18.370 +02:00 [DBG] requestId: no request id, previousRequestId: no previous request id, message: Unable to extract configuration for key: Authorization and value: Bearer {token} your configuration file is incorrect
-2023-09-13 20:34:18.465 +02:00 [DBG] requestId: no request id, previousRequestId: no previous request id, message: Unable to extract configuration for key: Authorization and value: Bearer {token} your configuration file is incorrect
-2023-09-13 20:34:18.466 +02:00 [DBG] requestId: no request id, previousRequestId: no previous request id, message: Unable to extract configuration for key: Authorization and value: Bearer {token} your configuration file is incorrect
-2023-09-13 20:34:18.470 +02:00 [DBG] requestId: no request id, previousRequestId: no previous request id, message: Unable to extract configuration for key: Authorization and value: Bearer {token} your configuration file is incorrect
-2023-09-13 20:34:18.478 +02:00 [DBG] requestId: no request id, previousRequestId: no previous request id, message: Unable to extract configuration for key: Authorization and value: Bearer {token} your configuration file is incorrect
-2023-09-13 20:34:19.056 +02:00 [INF] Now listening on: https://localhost:5000
-2023-09-13 20:34:19.083 +02:00 [INF] Application started. Press Ctrl+C to shut down.
-2023-09-13 20:34:19.089 +02:00 [INF] Hosting environment: Development
-2023-09-13 20:34:19.094 +02:00 [INF] Content root path: C:\Users\HP\Downloads\Web2_projekat-main (1)\Web2_projekat-main\Projekat_Backend\ApiGateway\
